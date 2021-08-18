@@ -4,13 +4,13 @@
 using namespace std;
 
 // Assign studentId and name
-Student::assignDetails(int sId, char sName[]) {
-  sId = studentId;
+void Student::assignDetails(int sId, char sName[]) {
+  studentId = sId;
   strcpy(name, sName);
 }
 
 // Display StudentId and Name
-Student::display() {
-  cout <<"Student ID: "<< sId << endl;
-  cout <<"Student Name: "<< sName << endl;
+void Student::display() {
+  cout <<"Student ID: "<< studentId << endl;
+  cout <<"Student Name: "<< name << endl;
 }
